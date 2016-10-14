@@ -1,0 +1,82 @@
+<!--<div ui-content-for="title">-->
+    <!--<span>Bolsa 00001</span>-->
+<!--</div>-->
+
+<div class="scrollable">
+    <div class="scrollable-content section">
+
+        <legend>Bolsa de sangue</legend>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Bolsa</h3>
+            </div>
+            <div class="panel-body">
+
+                <label>Código</label><br />
+                {{dadosBolsa.codigo}}
+                <hr>
+
+                <label>Grupo sanguíneo</label><br />
+                {{dadosBolsa.grupoSanguineo}}
+                <hr>
+
+                <label>Situação</label><br />
+                {{dadosBolsa.situacaoBolsa}}
+
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Doação</h3>
+            </div>
+            <div class="panel-body">
+
+                <label>Data/Hora</label><br />
+                {{dadosBolsa.dataHoraAgendamento}}
+                <hr>
+
+                <label>Laboratório</label><br />
+                {{dadosBolsa.laboratorio}}
+                <hr>
+
+                <label>Unidade Laboratorial</label><br />
+                {{dadosBolsa.unidadeLaboratorial}}
+
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Doador</h3>
+            </div>
+            <div class="panel-body">
+                <label>Nome</label><br />
+                {{dadosBolsa.nomeDoador}}
+                <hr>
+
+                <label>CPF</label><br />
+                {{dadosBolsa.cpfDoador}}
+                <hr>
+
+                <label>E-mail</label><br />
+                {{dadosBolsa.emailDoador}}
+                <hr>
+
+                <label>Telefone</label><br />
+                {{dadosBolsa.telefoneDoador}}
+                <hr>
+
+                <label>Endereço</label><br />
+                {{dadosBolsa.enderecoDoador}}
+
+            </div>
+        </div>
+
+        <br/><br/>
+    </div>
+</div>
+

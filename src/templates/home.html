@@ -2,20 +2,34 @@
     <div class="scrollable-content section" style="display: flex; align-items: center; justify-content: center;">
         <div>
             <h3 class="page-header" style="text-align: center">Rastrear Bolsa de Sangue</h3>
-            <div class="list-group-item list-group-item-home list-group-item-feature">
+            <div class="list-group-item list-group-item-home list-group-item-feature" style="border-bottom: none;">
                 <div>
                     <i class="fa fa-barcode feature-icon  text-primary"></i>
                 </div>
                 <div>
                     <h2 class="home-heading">NFC</h2>
                     <p>Aproxime o dispositivo ao sensor inteligente para exibir os dados da bolsa de sangue</p>
+
+                    <p>OU</p>
+
+                    <p>Informe o código da bolsa de sangue</p>
+
+
+                    <!--<div class="form-group" ng-class="validaForm.isNull(simulacao.uf) ? 'has-error': 'has-success' ">-->
+                    <div class="form-group" ng-class="">
+                        <!--<label>Informe o código da bolsa de sangue</label>-->
+                        <input type="text" ng-model="codigoBolsa" class="form-control" placeholder="Informe o código">
+                    </div>
+
+                    <button id="btnSubmit" class="btn btn-primary btn-block" ng-click='rastrear(codigoBolsa)' ng-class="isDisabled ? 'disabled' : ''" style="height: 4em; font-weight: bold; margin-top: 10px">
+                        <i ng-show="isDisabled" class="fa fa-refresh fa-spin"></i> RASTREAR
+                    </button>
+
+                    <br />
+
                 </div>
             </div>
         </div>
-
-        <!--<button id="btnSubmit" class="btn btn-primary btn-block" ng-click='rastrear()' ng-class="isDisabled ? 'disabled' : ''" style="height: 4em; font-weight: bold">-->
-            <!--<i ng-show="isDisabled" class="fa fa-refresh fa-spin"></i> RASTREAR-->
-        <!--</button>-->
 
         <!--<br /><br /><br /><br />-->
 
